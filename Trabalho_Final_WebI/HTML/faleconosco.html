@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/img/imagem_icon.png">
+<title>Fale Conosco</title>
+<style>
+    body {
+        background-color:rgb(192, 199, 199);
+    margin: 0 auto;
+    padding: 0;
+    color: #242424;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    }
+    .container {
+        max-width: 400px;
+        margin: 50px auto;
+    }
+    input[type="text"], textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    input[type="submit"] {
+        
+        background-color: rgb(30, 148, 169);
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        color: rgb(40, 20, 114);
+     background-color: rgb(24, 139, 233);
+    }
+    .navegacao {
+    list-style: none;
+    padding: 0;
+    background-color: rgb(30, 148, 169);
+}
+.navegacao li{
+    display: inline;
+
+}
+.navegacao  li a {
+    color:#131415;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+.navegacao li a:hover{
+     color: rgb(40, 20, 114);
+     background-color: rgb(24, 139, 233);
+
+}
+</style>
+</head>
+<body>
+
+    <ul class="navegacao">
+        <li> <a href="Index.html">Inicio</a></li>
+        <li> <a href="definicao_complexa.html">Definição</a></li>
+        <li> <a href="automacao.html">Automação</a></li>
+        <li> <a href="Tecnologias.html"> Tecnologias</a></li>
+        <li> <a href="Principais_referncias.html"> Empresas referencia</a></li>
+        <li><a href="faleconosco.html"> Fale conosco</a></li>
+
+        <div class=" conteiner">
+
+    </ul>
+
+<div class="container">
+    <h2>Fale Conosco</h2>
+    <form id="contactForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
